@@ -1,0 +1,23 @@
+/*
+Theme Name: MDF 01
+Theme URI: https://www.marindelafuente.com.ar
+Author: José Marin de la Fuente
+Author URI: https://www.marindelafuente.com.ar
+Description: Este es un sitio realizado por José Marin de la Fuente
+Requires at least: 5.3
+Tested up to: 6.2
+Requires PHP: 5.6
+Version: 1.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyone
+Tags: wordpress, themes, webdesign
+*/
+
+body {
+    background: #cb2d3e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: #FFf;
+
+}
