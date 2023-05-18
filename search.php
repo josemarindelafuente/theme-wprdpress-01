@@ -1,23 +1,19 @@
 <?php get_header(); ?>
 
     
-<?php
-// puedo usar CONDITIONAL TAGS para mostrar algunos elementos
-// si me encuentro en alguna pagina en especial:
-// - home.php
-// - archive
-// - search
-// uso los conditional tags:
-// - is_home()
-// - is_archive()
-// - is_search()
-// https://youtu.be/Xfr1a88NeRM?list=PLuvWCOZetD44AhINUd3WKdOt41tF8jh7B&t=397
-?>
+
 
 
 <div class="container">
 
-<h1>Mi primer sitio</h1>
+<h1>Resultado de Búsquedas en nuestro sitio web</h1>
+
+<p>
+    <?php
+    global $wp_query;
+    echo '<h3 >Entradas encontradas: ' . $wp_query->found_posts . '</h3>';
+    ?>
+</p>
 
         <div class="row">
             
