@@ -1,5 +1,8 @@
 <?php
 
+// reconfiguracion de las clases de estilo del menu
+require get_template_directory() . '/includes/class-my-theme-walker-nav-menu.php';
+
 
 add_action( 'after_setup_theme', 'add_features' ); //https://youtu.be/zJow4A9csyE?list=PLuvWCOZetD44AhINUd3WKdOt41tF8jh7B&t=114
 

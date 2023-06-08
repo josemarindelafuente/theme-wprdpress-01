@@ -14,7 +14,7 @@
                         if ( have_posts() ) {
                                 the_post();
                                 
-                                get_template_part( 'template-parts/content' , 'post' ); //https://youtu.be/wLIRQoZF0HQ?list=PLuvWCOZetD44AhINUd3WKdOt41tF8jh7B&t=396
+                                get_template_part( 'template-parts/content' , 'page' ); //https://youtu.be/wLIRQoZF0HQ?list=PLuvWCOZetD44AhINUd3WKdOt41tF8jh7B&t=458
                         } 
                         ?>
                 </div>

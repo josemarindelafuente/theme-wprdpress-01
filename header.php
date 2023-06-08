@@ -15,20 +15,23 @@
 
 <nav class="py-2 bg-body-tertiary border-bottom">
     <div class="container d-flex flex-wrap">
-      <ul class="nav me-auto">
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
-      </ul>
+     
 
-      <?php wp_nav_menu( array('menu' => 'primary') ); ?>
+      <?php
+      /* MENU PRINCIPAL DE WORDPRESS */
+      wp_nav_menu( //https://developer.wordpress.org/reference/functions/wp_nav_menu/
+        array(
+        'menu' => 'primary',
+        'menu_class' => 'nav me-auto',
+        'container' => '',
+        'walker' => new My_Theme_Walker_Nav_Menu(), //https://youtu.be/MvDAOa2zDrw?list=PLuvWCOZetD44AhINUd3WKdOt41tF8jh7B&t=590
+        )
+       ); 
+      /* FIN MENU PRINCIPAL DE WORDPRESS */
+      ?>
 
-      <ul class="nav">
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Sign up</a></li>
-      </ul>
+
+
     </div>
   </nav>
 
